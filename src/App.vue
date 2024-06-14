@@ -1,17 +1,21 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import AppNavigation from '@/components/AppNavigation.vue'
+import AppHero from '@/components/AppHero.vue'
+import AppScreenHeightContent from '@/components/AppScreenHeightContent.vue'
+import AppScreenWidthContent from '@/components/AppScreenWidthContent.vue'
 </script>
 
 <template>
-  <div class="bg-primary/10 min-h-screen px-12 font-arial-rounded">
-  <header>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-  </header>
-  <main>
-    <RouterView />
-  </main>
-  </div>
+    <div>
+      <app-screen-height-content>
+        <app-screen-width-content class="gap-12 bg-primary text-on-primary flex-wrap px-10 py-28 shadow-2xl rounded-2xl">
+          <app-navigation />
+          <app-hero />
+        </app-screen-width-content>
+      </app-screen-height-content>
+      <main>
+        <RouterView />
+      </main>
+    </div>
 </template>

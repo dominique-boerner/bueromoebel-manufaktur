@@ -12,9 +12,18 @@ export default {
         "secondary": "#FDB201",
         "on-secondary": "#FFFFFF",
       },
+      fontSize: {
+        "headline": "4rem",
+        "sub-headline": "2.6rem",
+        "article": "1.4rem"
+      },
       fontFamily: {
         "arial-rounded": "Arial Rounded MT",
-        "rage-italic": "Rage"
+        "rage-italic": "Rage",
+        "playwrite-netherland": "Playwrite NL"
+      },
+      listStyleType: {
+        "circle": "circle"
       }
     },
   },
