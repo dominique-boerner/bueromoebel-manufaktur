@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: "/bueromoebel-manufaktur/",
   server: {
     host: '0.0.0.0', // Lauscht auf allen Netzwerkinterfaces
     port: 3000,      // Du kannst den Port ändern, wenn nötig
