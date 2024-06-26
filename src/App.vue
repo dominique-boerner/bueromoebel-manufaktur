@@ -10,6 +10,7 @@ import { ref } from 'vue'
 const isGooseHovered = ref(false)
 
 const quack = new Audio(quackSound)
+quack.volume = 0.1
 </script>
 
 <template>
@@ -18,7 +19,6 @@ const quack = new Audio(quackSound)
       <app-screen-width-content class="gap-12 bg-primary text-on-primary flex-wrap px-10 py-28 shadow-2xl rounded-2xl">
         <app-navigation />
         <app-hero />
-        Hovered:{{ isGooseHovered }}
       </app-screen-width-content>
     </app-screen-height-content>
     <main>
