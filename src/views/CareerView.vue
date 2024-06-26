@@ -11,7 +11,6 @@ import EinladungPDF from '@/assets/docs/E-Mail_Einladung_Vorstellungsgespräch.p
 import StellenanzeigePDF from '@/assets/docs/Stellenanzeige_Bürokaufleute.pdf'
 import OnboardingPDF from '@/assets/docs/Onboarding_Plan.pdf'
 import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.pdf'
-import AppProcessBlock from '@/components/AppProcessBlock.vue'
 </script>
 
 <template>
