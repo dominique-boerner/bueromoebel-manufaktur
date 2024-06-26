@@ -33,31 +33,24 @@ import emailEinladungGeschaftsfuhrungsmeetingPDF from '@/assets/docs/EMail_Einla
     <app-screen-height-content>
       <app-blur-content>
         <div class="flex flex-col gap-4">
-          <span class="block text-headline">Unsere Vision</span>
-          <article class="text-article leading-loose">
-            Die Büromöbel – Personalmanagement GmbH strebt danach, als führender Anbieter für innovative und effiziente
-            Personaldienstleistungen in der Büromöbelbranche anerkannt zu werden. Durch unsere strategischen und
-            operativen
-            Maßnahmen tragen wir maßgeblich zur internationalen Expansion und zum langfristigen Erfolg der Büromöbel
-            Manufaktur KG bei. Wir sind davon überzeugt, dass engagierte, gut ausgebildete und zufriedene Mitarbeiter
-            der
-            Schlüssel zu einem erfolgreichen und nachhaltigen Unternehmen sind.
-          </article>
+          <span class="block text-headline text-center mb-4">Unsere Organigramme</span>
         </div>
       </app-blur-content>
     </app-screen-height-content>
-
     <app-screen-height-content>
       <app-blur-content>
         <div class="flex flex-col gap-4">
-          <span class="block text-headline">Unser Organigramm</span>
-          <article>
-            COMING SOON
-          </article>
+          <img alt="" src="@/assets/Organigramm_Muttergesellschaft.jpg" />
         </div>
       </app-blur-content>
     </app-screen-height-content>
-
+    <app-screen-height-content>
+      <app-blur-content>
+        <div class="flex flex-col gap-4">
+          <img alt="" src="@/assets/Organigramm_Tochtergesellschaft.jpg" />
+        </div>
+      </app-blur-content>
+    </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
         <div class="flex flex-col gap-4">
@@ -107,32 +100,8 @@ import emailEinladungGeschaftsfuhrungsmeetingPDF from '@/assets/docs/EMail_Einla
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 text-center items-center">
           <span class="block text-headline">Warum haben wir uns für eine GmbH entschieden?</span>
-          <ul class="list-disc text-article">
-            <li>
-              <u>Haftungsbeschränkung:</u> Die GmbH bietet den Vorteil der Haftungsbeschränkung, was gerade in einem
-              internationalen Kontext wichtig ist, um das Risiko für die Muttergesellschaft zu minimieren.
-            </li>
-            <li>
-              <u>Kapitalbeschaffung und Investoren:</u> Eine GmbH ist attraktiv für Investoren und erleichtert die
-              Kapitalbeschaffung für mögliche Expansionen.
-            </li>
-            <li>
-              <u>Professionelles Image:</u> Die GmbH hat ein professionelles und stabiles Image, was im internationalen
-              Geschäft
-              von Vorteil ist.
-            </li>
-          </ul>
-          <article class="text-article leading-loose">
-            Für die geplante Tochtergesellschaft „Büromöbel – Personalmanagement GmbH“ ist die Rechtsform der GmbH
-            aufgrund
-            der Haftungsbeschränkung, der besseren Kapitalbeschaffungsmöglichkeiten und des professionellen Images die
-            bessere
-            Wahl. Die bestehende Struktur der Büromöbel Manufaktur KG kann als KG beibehalten werden, um von den
-            bestehenden
-            Vorteilen der Flexibilität und Steueroptimierung zu profitieren.
-          </article>
           <span class="underline">Anlagen:</span>
           <app-downloadable name="E-Mail_einladung_geschaftsfuhrungsmeeting.pdf"
                             :url="emailEinladungGeschaftsfuhrungsmeetingPDF" />

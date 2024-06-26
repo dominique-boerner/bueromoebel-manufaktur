@@ -11,20 +11,23 @@ import EinladungPDF from '@/assets/docs/E-Mail_Einladung_Vorstellungsgespräch.p
 import StellenanzeigePDF from '@/assets/docs/Stellenanzeige_Bürokaufleute.pdf'
 import OnboardingPDF from '@/assets/docs/Onboarding_Plan.pdf'
 import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.pdf'
+import FragenkatalogPDF from '@/assets/docs/Fragenkatalog_für_Vorstellungsgespräche.pdf'
+import MusterArbeitsvertragPDF from '@/assets/docs/Muster_Arbeitsvertrag.pdf'
+import MusterAusbildungsvertragPDF from '@/assets/docs/Muster_Ausbildungsvertrag.pdf'
 </script>
 
 <template>
   <app-screen-width-content>
     <app-screen-height-content>
       <app-blur-content class="relative">
+        <img alt="" src="@/assets/team.png" />
         <span class="text-6xl text-primary font-playwrite-netherland">»Your <span class="font-bold text-secondary">comfort</span>, our <span
           class="font-bold text-secondary">Job</span>«</span>
-        <span class="absolute left-20 text-[8rem] mb-48 -z-10 text-secondary fi fi-sr-comment-smile" />
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
-        <span class="relative text-primary text-8xl fi fi-sr-talent-alt" />
+        <img alt="" src="@/assets/suit.png" class="w-64" />
         <article class="text-2xl leading-loose">Bürokaufmänner/-frauen sind die Seele eines Unternehmens. Sie
           organisieren und führen das Büro
           zuverlässig, sodass die anderen Mitarbeiter ihre Fachaufgaben wahrnehmen können. Sie übernehmen kaufmännische
@@ -35,20 +38,7 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
-        <span class="relative text-primary text-8xl fi fi-sr-question" />
-        <span class="text-headline">Was machen Bürokaufmänner/-frauen</span>
-        <article class="text-2xl leading-loose">Bürokaufmänner/-frauen verwalten das allgemeine Tagesgeschäft eines
-          Unternehmens. Sie bearbeiten Kundenanfragen, schicken Angebote und übernehmen die Rechnungsführung. Sie sind
-          dafür verantwortlich, die Organisationsabläufe im Büro zu strukturieren und einen reibungslosen Ablauf zu
-          gewährleisten. Sie schlagen neue Arbeits- und Organisationssysteme für die Effizienzsteigerung vor. Außerdem
-          sind sie Ansprechpartner für Mitarbeiter in Fragen des Office-Managements. Zudem organisieren sie
-          Besprechungen und Konferenzen für das Unternehmen.
-        </article>
-      </app-blur-content>
-    </app-screen-height-content>
-    <app-screen-height-content>
-      <app-blur-content>
-        <span class="relative text-primary text-8xl fi fi-sr-face-sunglasses-alt" />
+        <img alt="" src="@/assets/title.png" class="w-64" />
         <span class="text-headline">Interesse geweckt?</span>
         <article class="text-2xl leading-loose">Sie haben Interesse daran große Verantwortung zu Übernehmen? Dann
           schauen Sie sich jetzt unsere Ausschreibung an!
@@ -57,13 +47,11 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
-      <app-blur-content>
-        <span class="relative text-primary text-8xl fi fi-sr-face-sunglasses-alt" />
-        <span class="text-headline">Bewerbungsverfahren? So läuft es bei uns ab!</span>
-      </app-blur-content>
-    </app-screen-height-content>
-    <app-screen-height-content>
-      <app-blur-content>
+      <app-blur-content class="gap-0">
+        <img alt="" src="@/assets/recruitment.png" class="w-64 mb-24" />
+        <span class="text-headline">Bewerbungsverfahren?</span>
+        <span class="text-headline">So läuft es bei uns ab!</span>
+        <span class="text-headline text-red-500 text-center">BEWERBUNGSLEITFADEN KATZIIII!?</span>
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
@@ -73,10 +61,10 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
-      <app-blur-content>
-        <span class="relative text-8xl fi fi-sr-square-plus text-green-500" />
+      <app-blur-content class="relative items-center">
+        <span class="absolute left-0 text-8xl fi fi-sr-square-plus text-green-500" />
         <span class="text-headline">Vorteile eines Assessment-Centers</span>
-        <app-list class="text-2xl w-full leading-loose">
+        <app-list class="block text-2xl leading-loose">
           <app-list-item label="Ganzheitliche Bewertung" />
           <app-list :is-sub-list="true">
             <app-list-item label="Multifunktionale Evaluation" />
@@ -99,10 +87,10 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
-      <app-blur-content>
-        <span class="relative text-8xl fi fi-sr-square-minus text-red-500" />
+      <app-blur-content class="relative items-center">
+        <span class="absolute left-0 text-8xl fi fi-sr-square-minus text-red-500" />
         <span class="text-headline">Nachteile eines Assessment-Centers</span>
-        <app-list class="text-2xl w-full leading-loose">
+        <app-list class="text-2xl leading-loose">
           <app-list-item label="Hohe Kosten" />
           <app-list :is-sub-list="true">
             <app-list-item label="Ressourcenintensiv" />
@@ -140,26 +128,34 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
-        <span class="relative text-primary text-8xl fi fi-sr-face-sunglasses-alt" />
+        <img alt="" src="@/assets/satisfaction.png" class="w-64" />
         <span class="text-headline">Auswahlkriterien für Bewerber</span>
-        <article class="text-article leading-loose">KATZII MUSS SICH HIER NOCH NEN TEXT ÜBERLEGEN *ZWINKERSMILEY*
-        </article>
         <app-downloadable name="Auswahlkriterien für Bewerber.pdf" :url="AbsagePDF" />
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
-        <div class="grid grid-cols-2 grid-rows-2">
-          <span class="relative text-primary text-headline fi fi-sr-face-happy" />
-          <span class="relative text-primary text-headline fi fi-sr-face-sunglasses-alt" />
+        <div class="flex justify-center items-center gap-20">
           <app-downloadable name="Absage_für_Bewerber.pdf" :url="AbsagePDF" />
+          <img alt="" src="@/assets/happy-sad.png" class="w-32" />
           <app-downloadable name="E-Mail_Einladung_Vorstellungsgespräch.pdf" :url="EinladungPDF" />
         </div>
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content class="flex flex-col gap-10">
-        <span class="text-headline text-primary mb-10">Zusage! Nun zum Vertrag...</span>
+        <img alt="" src="@/assets/interview.png" class="w-64" />
+        <span class="text-headline text-primary mb-10">Das Vorstellungsgespräch</span>
+        <app-downloadable name="Fragenkatalog_für_Vorstellungsgespräche.pdf" :url="FragenkatalogPDF" />
+      </app-blur-content>
+    </app-screen-height-content>
+    <app-screen-height-content>
+      <app-blur-content class="flex flex-col gap-10">
+        <div class="flex gap-4 justify-center items-center">
+          <img alt="" src="@/assets/smiley.png" class="w-32" />
+          <span class="text-headline text-primary">Zusage! Nun zum Vertrag...</span>
+          <img alt="" src="@/assets/contract.png" class="w-32" />
+        </div>
         <article class="text-article leading-loose">Die Vorbereitung eines Arbeitsvertrags ist ein essenzieller Schritt,
           um die Rechte und Pflichten sowohl des Arbeitgebers als auch des Arbeitnehmers klar festzulegen. Dabei sind
           verschiedene Arten von Arbeitsverträgen zu berücksichtigen, insbesondere Zeit und Zweckbefristete Verträge.
@@ -236,13 +232,16 @@ import MusterEinarbeitungsplanPDF from '@/assets/docs/Muster_Einarbeitungsplan.p
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
-      <app-blur-content class="flex flex-col gap-10">
+      <app-blur-content class="flex flex-col gap-4">
+        <img alt="" src="@/assets/contract1.png" class="w-64" />
         <span class="text-headline text-primary mb-10">Verträge</span>
-        <article class="text-article leading-loose">TODO: Verträge hinzufügen</article>
+        <app-downloadable name="Muster_Arbeitsvertrag.pdf" :url="MusterArbeitsvertragPDF" />
+        <app-downloadable name="Muster_Ausbildungsvertrag.pdf" :url="MusterAusbildungsvertragPDF" />
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content class="relative">
+        <img alt="" src="@/assets/onboarding.png" class="w-64" />
         <span class="text-headline text-primary">Onboarding</span>
         <article class="text-article leading-loose">Unser Plan mit Musterarbeitswoche!</article>
         <div class="flex gap-4">

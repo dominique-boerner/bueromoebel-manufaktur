@@ -11,6 +11,6 @@
             Effizienz unseres Mutterunternehmens zu stärken.
           </span>
     </div>
-    <img class="w-96" alt="Logo" src="@/assets/logo.png" />
+    <img class="w-[500px]" alt="Logo" src="@/assets/logo.png" />
   </div>
 </template>

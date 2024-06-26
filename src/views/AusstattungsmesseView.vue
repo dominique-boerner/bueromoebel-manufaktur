@@ -12,13 +12,17 @@ import reisekostenabrechnungMajaMusterfrauPDF from '@/assets/docs/Reisekostenabr
   <app-screen-width-content>
     <app-screen-height-content>
       <app-blur-content>
-        <div class="flex flex-col gap-4">
-          <app-downloadable name="Büroausstattungsmesse - Die Belege.pdf"
-                            :url="bueroausstattungsmessePDF" />
-          <app-downloadable name="Reisekostenabrechnung_Chef_Dr_Muster.pdf"
-                            :url="reisekostenabrechnungChefDrMusterPDF" />
-          <app-downloadable name="Reisekostenabrechnung_Maja_Musterfrau.pdf"
-                            :url="reisekostenabrechnungMajaMusterfrauPDF" />
+        <div class="flex gap-12 items-center">
+          <img alt="" src="@/assets/train.png" class="scale-x-[-1] w-64" />
+          <div class="flex flex-col gap-4">
+            <app-downloadable name="Büroausstattungsmesse - Die Belege.pdf"
+                              :url="bueroausstattungsmessePDF" />
+            <app-downloadable name="Reisekostenabrechnung_Chef_Dr_Muster.pdf"
+                              :url="reisekostenabrechnungChefDrMusterPDF" />
+            <app-downloadable name="Reisekostenabrechnung_Maja_Musterfrau.pdf"
+                              :url="reisekostenabrechnungMajaMusterfrauPDF" />
+          </div>
+          <img alt="" src="@/assets/train.png" class="w-64" />
         </div>
       </app-blur-content>
     </app-screen-height-content>

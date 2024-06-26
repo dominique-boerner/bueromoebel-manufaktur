@@ -28,6 +28,11 @@ const router = createRouter({
       name: 'expansion',
       component:  () => import("./../views/ExpansionView.vue")
     },
+    {
+      path: '/this-is-the-end',
+      name: 'this-is-the-end',
+      component:  () => import("./../views/ThisIsTheEndView.vue")
+    },
   ]
 })
 

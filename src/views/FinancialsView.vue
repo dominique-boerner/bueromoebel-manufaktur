@@ -4,13 +4,17 @@ import AppScreenHeightContent from '@/components/AppScreenHeightContent.vue'
 import AppList from '@/components/AppList.vue'
 import AppListItem from '@/components/AppListItem.vue'
 import AppScreenWidthContent from '@/components/AppScreenWidthContent.vue'
+import KostenplanPDF from '@/assets/docs/Kostenplan.pdf'
+import AppDownloadable from '@/components/AppDownloadable.vue'
 </script>
 
 <template>
   <app-screen-width-content>
     <app-screen-height-content>
       <app-blur-content class="relative">
-        <span class="absolute -z-10 text-gray-300/70 text-[60vw] fi fi-sr-coins" />
+        <div class="absolute">
+          <img alt="" class="opacity-10" src="@/assets/pay.png" />
+        </div>
         <table class="border border-primary p-4">
           <thead class="border border-primary p-4">
           <tr class="border border-primary p-4">
@@ -88,6 +92,9 @@ import AppScreenWidthContent from '@/components/AppScreenWidthContent.vue'
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
+        <div class="absolute">
+          <img alt="" class="opacity-10" src="@/assets/transfer.png" />
+        </div>
         <table class="border border-primary p-4">
           <thead class="border border-primary p-4">
           <tr class="border border-primary p-4">
@@ -200,6 +207,9 @@ import AppScreenWidthContent from '@/components/AppScreenWidthContent.vue'
     </app-screen-height-content>
     <app-screen-height-content>
       <app-blur-content>
+        <div class="absolute">
+          <img alt="" class="opacity-10" src="@/assets/transfer.png" />
+        </div>
         <table class="border border-primary p-4">
           <thead class="border border-primary p-4">
           <tr class="border border-primary p-4">
@@ -243,6 +253,15 @@ import AppScreenWidthContent from '@/components/AppScreenWidthContent.vue'
           </tr>
           </tbody>
         </table>
+      </app-blur-content>
+    </app-screen-height-content>
+    <app-screen-height-content>
+      <app-blur-content>
+        <div class="flex flex-col gap-4 text-center items-center">
+          <span class="underline">Anlage:</span>
+          <app-downloadable name="Kostenplan.pdf"
+                            :url="KostenplanPDF" />
+        </div>
       </app-blur-content>
     </app-screen-height-content>
   </app-screen-width-content>
