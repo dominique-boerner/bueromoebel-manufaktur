@@ -22,7 +22,6 @@ import AppDownloadable from '@/components/AppDownloadable.vue'
     <app-screen-height-content>
       <app-blur-content>
         <div class="flex flex-col items-center flex-wrap w-1/2 gap-12 mb-24">
-          <span class="block text-headline">Unsere Ziele</span>
           <img alt="" src="@/assets/to-do-list.png" class="w-48" />
           <app-downloadable name="Protokoll_Nr.1_03062024.pdf" :url="Protokoll1PDF" />
           <app-downloadable name="Protokoll_Nr.2_07062024.pdf" :url="Protokoll2PDF" />
