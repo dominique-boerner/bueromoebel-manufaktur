@@ -27,10 +27,10 @@ quack.volume = 0.1
     <img v-if="isGooseHovered"
          alt=""
          src="@/assets/hello.png"
-         class="h-12 bottom-12 right-16 fixed cursor-pointer drop-shadow-2xl" />
+         class="h-24 bottom-20 right-24 fixed cursor-pointer drop-shadow-2xl" />
     <img alt=""
          src="@/assets/goose.png"
-         class="scale-x-[-1] h-12 fixed bottom-2 right-2 cursor-pointer"
+         class="scale-x-[-1] h-24 fixed bottom-2 right-2 cursor-pointer"
          @click="quack.play()"
          @mouseenter="isGooseHovered = true"
          @mouseleave="isGooseHovered = false" />

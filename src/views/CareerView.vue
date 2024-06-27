@@ -51,7 +51,6 @@ import MusterAusbildungsvertragPDF from '@/assets/docs/Muster_Ausbildungsvertrag
         <img alt="" src="@/assets/recruitment.png" class="w-64 mb-24" />
         <span class="text-headline">Bewerbungsverfahren?</span>
         <span class="text-headline">So läuft es bei uns ab!</span>
-        <span class="text-headline text-red-500 text-center">BEWERBUNGSLEITFADEN KATZIIII!?</span>
       </app-blur-content>
     </app-screen-height-content>
     <app-screen-height-content>
